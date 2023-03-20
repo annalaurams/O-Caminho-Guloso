@@ -34,11 +34,9 @@ void Matriz :: caminhar(int **matriz, int tamanho, int soma, int *total, int con
 
   soma += matriz[linha][coluna];
 
-  cout << "\nNúmeros do caminho dessa matriz: ";
+  cout << "\nNúmeros do caminho dessa matriz: " << matriz[linha][coluna] << " ";
 
   while ((linha != tamanho - 1) || (coluna != tamanho - 1)){
-
-    cout << "\nBBBBBBBBBBBBBBBBBBBBBBBB" << endl;
 
     int maior = 0;
     int lm = 0;
@@ -168,7 +166,7 @@ void Matriz :: transformar(int **matriz, string **matriz_string, int tamanho, in
       }
     }
 
-    /*for (int i = 0; i < tamanho; i++){
+    for (int i = 0; i < tamanho; i++){
       for (int j = 0; j < tamanho; j++){
         matriz[i][j] = atoi(matriz_string[i][j].c_str());
       }
@@ -185,12 +183,9 @@ void Matriz :: transformar(int **matriz, string **matriz_string, int tamanho, in
 
     contador++;
     auxiliar_cont++;
-
-    cout << "Contaodor " << contador << endl;
-    cout << "Aux " << auxiliar_cont << endl;
   
     aux2 = 0;
-    aux1 = 0;*/
+    aux1 = 0;
 
     arquivo.close();
   }
