@@ -11,7 +11,7 @@ int main(){
 
   int **matriz;
   string **matriz_string;
-  int tamanho = 0, contador = 0 ;
+  int tamanho = 0;
   int soma = 0, total = 0;
 
   Matriz matrix;
@@ -38,7 +38,7 @@ int main(){
     }
   }
 
-  matrix.transformar(matriz, matriz_string, tamanho, soma, &total, contador);
+  matrix.transformar(matriz, matriz_string, tamanho, soma, &total);
   matrix.resultado(&total);
 
   return 0;

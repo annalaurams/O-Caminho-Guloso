@@ -18,8 +18,8 @@ class Matriz{
         Matriz();
         
         void tamanho(int *tamanho);
-        void transformar(int **matriz, string **matriz_string, int tamanho, int soma, int *total, int contador);
-        void caminhar(int **matriz, int tamanho, int soma, int *total, int contador);
+        void transformar(int **matriz, string **matriz_string, int tamanho, int soma, int *total);
+        void caminhar(int **matriz, int tamanho, int soma, int *total);
         void resultado(int *total);
         void imprimir(int **matriz, int tamanho);
 

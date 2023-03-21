@@ -1,11 +1,18 @@
 # **O Caminho Guloso**
 
-Atividade para a disciplina de Algoritmos e Estruturas de dados I.
+Atividade para a disciplina de Algoritmos e Estruturas de dados I. <br/>
+O objetivo é desenvolver um algoritmo que utiliza a estratégia gulosa para tomar decisões, a partir da entrada de valores de uma matriz contidas em um arquivo.
 
 ### **Introdução**
-O método guloso de projeto de algoritmos constrói a resolução peça por peça, faz escolhas que oferecem maior benefício localmente a cada iteração, sem voltar atrás de qualquer escolha. Orientado a aplicações de otimização do programa, a estratégia gulosa tem como objetivo encontrar a melhor resposta para cada passo. <br/>
+
+A estratégia gulosa de projeto de algoritmos constrói a resolução peça por peça, faz escolhas que oferecem maior benefício localmente a cada iteração, sem voltar atrás de qualquer escolha. Orientado a aplicações de otimização do programa, a estratégia gulosa tem como objetivo encontrar a melhor resposta para cada passo. <br/>
 Uma matriz é um tipo de tabela, que representa e organiza dados por meio de linhas e colunas. <br/> <br/>
+<<<<<<< HEAD
 O projeto apresentado foi feito na **linguagem C++**, consiste em caminhar por uma matriz de números inteiros positivos, o qual o percurso é feito sempre optando pelo maior número com base nas opções disponíveis até chegar na última posição de cada matriz, sem visitar novamente lugares já percorridos. O algoritmo deve também realizar a soma dos números pertencentes ao caminho de cada matriz.
+=======
+
+O projeto apresentado, feito na **linguagem C++**, consiste em caminhar por uma matriz de números inteiros positivos, o qual o percurso é feito sempre optando pelo maior número com base nas opções disponíveis até chegar na última posição de cada matriz, sem visitar novamente lugares já percorridos.
+>>>>>>> 8a9f742 (atualizando)
 
 ### **Estrutura**
 
@@ -39,8 +46,13 @@ Caso seja possível, ele olha qual posição possui o número maior.
   4. Para esquerda (n° 4)
   5. Para baixo (n° 8)
 
+<<<<<<< HEAD
   Exemplo ilustrativo para a ordem de verificação:        
   ![F](imagens/ex_direcoes.png)
+=======
+Exemplo ilustrativo para a ordem de verificação:        
+![F](imagens/direcoes.png)
+>>>>>>> 8a9f742 (atualizando)
 
   De acordo com a posição que o algoritmo estiver, nem sempre será uma possibilidade as 5 direções. Por exemplo, se o algoritmo estiver na posição [1][2], ocupada pelo algarismo 6, ele não tem a opção de ir para direita ou para diagonal direita, pois são posições nulas que não pertencem a matriz. 
 

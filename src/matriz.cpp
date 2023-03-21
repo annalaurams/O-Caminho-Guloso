@@ -27,7 +27,7 @@ void Matriz ::  tamanho(int *tamanho){
 
 // Função que percorre a matriz, caminhando pelo maior número
 
-void Matriz :: caminhar(int **matriz, int tamanho, int soma, int *total, int contador){
+void Matriz :: caminhar(int **matriz, int tamanho, int soma, int *total){
 
   int linha = 0;
   int coluna = 0;
@@ -113,9 +113,9 @@ void Matriz :: caminhar(int **matriz, int tamanho, int soma, int *total, int con
 
 // Função que converte a matriz lida no formato string para uma matriz de números inteiros, para permitir a soma do percurso
 
-void Matriz :: transformar(int **matriz, string **matriz_string, int tamanho, int soma, int *total, int contador){
+void Matriz :: transformar(int **matriz, string **matriz_string, int tamanho, int soma, int *total){
 
-  int aux1 = 0, aux2 = 0, controle = 0, auxiliar_cont = 1;
+  int aux1 = 0, aux2 = 0, auxiliar_cont = 1;
   string posicao, elemento;
 
   ifstream arquivo;
@@ -141,7 +141,7 @@ void Matriz :: transformar(int **matriz, string **matriz_string, int tamanho, in
         cout << "\t" << auxiliar_cont << "° MATRIZ" << endl << endl;
 
         imprimir(matriz, tamanho);
-        caminhar(matriz, tamanho, soma, total, contador);
+        caminhar(matriz, tamanho, soma, total);
         imprimir(matriz, tamanho);
 
         cout << "-----------------------------------------------\n";
@@ -149,7 +149,6 @@ void Matriz :: transformar(int **matriz, string **matriz_string, int tamanho, in
         aux2 = 0;
         aux1 = 0;
 
-        contador++;
         auxiliar_cont++;
       
       }
@@ -175,13 +174,12 @@ void Matriz :: transformar(int **matriz, string **matriz_string, int tamanho, in
     cout << "\t" << auxiliar_cont <<"° MATRIZ" << endl << endl;
 
     imprimir(matriz, tamanho);
-    caminhar(matriz, tamanho, soma, total, contador);
+    caminhar(matriz, tamanho, soma, total);
     imprimir(matriz, tamanho);
     cout << endl;
 
     cout << "-----------------------------------------------\n";
 
-    contador++;
     auxiliar_cont++;
   
     aux2 = 0;
