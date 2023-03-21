@@ -54,8 +54,7 @@ Exemplo ilustrativo para a ordem de verificação:
 
 O programa é efetuado até todas as matrizes serem lidas, e através da variável "contador" ele conta a quantidade de matrizes.
 
-
-### **Exemplo de compilação:**
+### **Resultado esperado**
 
 Durante a execução do programa é mostrado: 
 
@@ -65,10 +64,7 @@ Durante a execução do programa é mostrado:
 - A alteração das posições visitadas por (-1)<br/>
 - No final, a soma total do caminho de todas as matrizes<br/>
 <br/>
-
-
-
-
+<img src="imagens/terminal.png" height="550" width="350">
 <br/>
 
 ### Compilação e Execução
