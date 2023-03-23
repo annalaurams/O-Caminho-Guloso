@@ -4,7 +4,7 @@ Atividade para a disciplina de Algoritmos e Estruturas de dados I. <br/>
 O objetivo é desenvolver um algoritmo que utiliza a estratégia gulosa para tomar decisões, a partir da entrada de valores de uma matriz contidas em um arquivo.
 
 ### **Introdução** <br/>
-A estratégia gulosa de projeto de algoritmos constrói a resolução peça por peça, faz escolhas que oferecem maior benefício localmente a cada iteração, sem voltar atrás de qualquer escolha. Orientado a aplicações de otimização do programa, a estratégia gulosa tem como objetivo encontrar a melhor resposta para cada passo. <br/>
+A estratégia gulosa constrói a resolução peça por peça, faz escolhas que oferecem maior benefício localmente a cada iteração, sem voltar atrás de qualquer decisão. Orientado a aplicações de otimização do programa, a estratégia gulosa tem como propósito encontrar a melhor resposta para cada passo. <br/>
 Uma matriz é um tipo de tabela, que representa e organiza dados por meio de linhas e colunas. <br/>
 
 O projeto apresentado foi feito na **linguagem C++**, consiste em caminhar por uma matriz de números inteiros positivos, o qual o percurso é feito sempre optando pelo maior número com base nas opções disponíveis até chegar na última posição de cada matriz, sem visitar novamente lugares já percorridos. O algoritmo deve também realizar a soma dos números pertencentes ao caminho de cada matriz. 
@@ -50,7 +50,7 @@ Modelo ilustrativo para a ordem de verificação:
 <br/>
 
   De acordo com a posição que o algoritmo estiver, nem sempre será uma possibilidade as 5 direções. <br/>
-  Exemplo: Se o algoritmo estiver na posição [1][2], ocupada pelo algarismo 6, ele não tem a opção de ir para direita ou para diagonal direita, pois são posições nulas que não pertencem a matriz. Logo, ele só pode ir para uma das  três posições disponíveis, consequentemente a que tiver o maior número.
+  Exemplo: Se o algoritmo estiver na posição [1][2], ocupada pelo algarismo 6, ele não tem a opção de ir para direita ou para diagonal direita, pois são posições nulas que não pertencem a matriz. Logo, ele só pode ir para uma das outras três posições disponíveis, consequentemente a que tiver o maior número.
 
   <img src="imagens/exemplo.png" height="200" width="200">
 
@@ -63,7 +63,7 @@ Modelo ilustrativo para a ordem de verificação:
 - ```Função resultado``` : Ao final da execução do código é revelado a soma total do percurso de todas as matrizes juntas.
 - ```Função imprimir``` : Responsável por mostrar a matriz.
 
-O programa é efetuado até todas as matrizes serem lidas, e através da variável "contador" ele conta a quantidade de matrizes.
+O programa é efetuado até todas as matrizes serem lidas, e através da variável "contador" ele conta a quantidade de matrizes existentes no arquivo.
 
 
 ### **Exemplo de compilação:**
@@ -73,7 +73,7 @@ Durante a execução do programa é mostrado:
 - A matriz lida naquele instante<br/>
 - Todos os números do caminho realizado<br/>
 - A soma individual do caminho dessa matriz<br/>
-- A alteração das posições visitadas por (-1), desse modo mostrando o trajeto realizado.<br/>
+- A matriz com alteração das posições visitadas por (-1), desse modo mostrando o trajeto realizado.<br/>
 - No final, a soma total do caminho de todas as matrizes<br/>
 <br/>
 <img src="imagens/terminal.png" height="500" width="350">
