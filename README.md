@@ -65,7 +65,6 @@ Modelo ilustrativo para a ordem de verificação:
 
 O programa é efetuado até todas as matrizes serem lidas, e através da variável "contador" ele conta a quantidade de matrizes existentes no arquivo.
 
-
 ### **Exemplo de compilação:**
 
 Durante a execução do programa é mostrado: 
@@ -76,8 +75,8 @@ Durante a execução do programa é mostrado:
 - A matriz com alteração das posições visitadas por (-1), desse modo mostrando o trajeto realizado.<br/>
 - No final, a soma total do caminho de todas as matrizes<br/>
 <br/>
-<img src="imagens/terminal.png" height="500" width="350">
-<br/>
+<img src="imagens/terminal.png" height="550" width="350">
+
 
 ### Compilação e Execução
 
