@@ -33,6 +33,7 @@ O projeto apresentado foi feito na **linguagem C++**, consiste em caminhar por u
 
 - ```Função caminhar```: É a responsável pelo caminho do algoritmo. <br/>
 O percurso de cada matriz se inicia na posição [0,0] e é finalizado na posição [tamanho][tamanho]. <br/>
+Não é permitido passar pelo mesmo local mais de uma vez e não pode subir para as linhas anteriores.<br/>
 Em cada iteração o algoritmo verifica primeiro se é possível acessar uma determinada posição, para que ele não visite lugares vazios.  
 Caso seja possível, ele olha qual posição possui o número maior.
 
@@ -57,7 +58,7 @@ Modelo ilustrativo para a ordem de verificação:
   <br/>
   O trajeto realizado por cada matriz é alterado pelo valor (-1), para registrar o percurso. <br/>
   Ao chegar na última linha de cada matriz, o deslocamento é apenas para direita até chegar na última posição.<br/>
-  O caminhamento é dado pela última direção visitada que cumpri os critérios abordados. Em casos com números iguais, a escolha é feita sempre pelo último comando que o algoritmo entrou, de acordo com a ordem apresentada.
+  O caminhamento é dado pela última direção visitada que cumpri os critérios abordados. Em casos com números iguais, a escolha é feita sempre pelo último comando que o algoritmo entrou, de acordo com a ordem de verificação apresentada.
  
  
 - ```Função resultado``` : Ao final da execução do código é revelado a soma total do percurso de todas as matrizes juntas.
@@ -72,7 +73,7 @@ Durante a execução do programa é mostrado:
 - A matriz lida naquele instante<br/>
 - Todos os números do caminho realizado<br/>
 - A soma individual do caminho dessa matriz<br/>
-- A matriz com alteração das posições visitadas por (-1), desse modo mostrando o trajeto realizado.<br/>
+- A matriz com alteração das posições visitadas por (-1), desse modo mostrando o trajeto realizado<br/>
 - No final, a soma total do caminho de todas as matrizes<br/>
 <br/>
 <img src="imagens/terminal.png" height="550" width="350">
